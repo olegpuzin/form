@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head> 
+<body>
+    <section class="wrapper">
+        <h1 class="text">
+            Submit Your <strong>Best</strong> Designs
+        </h1>
+        <form action="#">
+            <div class="part1">
+                <div class="field1">
+                    <input name="name"
+                        placeholder="First Name*" 
+                        required
+                        tabindex="1"
+                        type="text">
+                        <input name="surname"
+                        placeholder="Last Name*"
+                        required
+                        tabindex="2"
+                        type="text">
+                </div>
+                <div class="field2">
+                    <input name="email"
+                        placeholder="Email*"
+                        required
+                        tabindex="3"
+                        type="email">
+                    <input name="name"
+                        placeholder="Company Name*" 
+                        required
+                        tabindex="3"
+                        type="text">
+                </div>
+                <div class="field3">
+                    <input  name="url"
+                        placeholder="Company Website*"
+                        required
+                        tabindex="5"
+                        type="url">
+                    <select name="package" tabindex="6">
+                         <option value="" selected disabled>Choose Your Package</option>
+                        <option value="Package1">Package1</option>
+                        <option value="package2">Package2</option>
+                        <option value="package3">Package3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="part2">
+                <fieldset>
+                    <div class="subtitle">
+                        <h3 class="add-design">Add Your Best Design</h3>
+                    </div>
+                    <div class="block-add">
+                        <div class="block1">
+                            <input name="name"
+                                placeholder="Designs Project Name*"
+                                required
+                                type="text">
+                                <select name="package" tabindex="6" required>
+                                    <option value="" selected disabled>Best Designs Category*</option>
+                                    <option value="Package1">Category1</option>
+                                    <option value="package2">Category2</option>
+                                    <option value="package3">Category3</option>
+                                </select>
+                        </div>
+                        <div class="block2">
+                            <textarea name="massage" 
+                                placeholder="Project Short Description">
+                            </textarea>
+                        </div>
+                    </div>
+                     <span class="empty"></span>
+                     <div class="block3">
+                        <input  name="url"
+                        placeholder="Add Your Best Designs"
+                        type="url">
+                        <button type="submit">Add URL</button>
+                     </div>
+                     <div class="button">
+                        <button type="submit">Save and Add More Designs</button>
+                     </div>
+                </fieldset>
+            </div> 
+            <div class="part3">
+                <label>
+                    <input type="checkbox" name="check">
+                    <span class="checkbox"></span>
+                    <span class="description">I'd like to receive occasional insights from DesignRush</span>
+                </label>
+                <p>
+                    By submitting this form, i agree to DesignRush 
+                    <a href="#">Terms of Use</a>
+                    and
+                    <a href="#">Privacy Policy</a>.
+                </p>
+                <p>
+                    This site is protected by reCAPTCHA and the  Google 
+                    <a href="#">Privacy Policy</a> 
+                    and 
+                    <a href="#">Terms of Service</a> 
+                    apply.
+                </p>
+                <div class="submit">
+                    <button type="submit">
+                        Submit 
+                        <span></span>
+                    </button>
+                </div>
+            </div> 
+        </form>
+        <hr>
+    </section>
+</body>
+</html>
